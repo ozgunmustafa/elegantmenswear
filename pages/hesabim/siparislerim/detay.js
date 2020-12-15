@@ -35,7 +35,7 @@ const Detay = () => {
                 </div>
                 <div className="d-flex justify-content-between align-items-center discount">
                   <span>150 TL ve üzeri kargo bedava </span>
-                  <strong>25.99 TL</strong>
+                  <strong>9.99 TL</strong>
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between align-items-center">

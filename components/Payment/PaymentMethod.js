@@ -132,18 +132,18 @@ const EFT = () => {
       </p>
       <BankAccount
         image="/images/banks/akbank.png"
-        name="Şerif Kaytan"
-        accountNo="IBAN:TR1555655589987"
+        name="Mustafa Özgün"
+        accountNo="IBAN:TR26 0011 1000 0000 0086 7175 55"
       />
       <BankAccount
         image="/images/banks/garanti-bbva.png"
-        name="Şerif Kaytan"
-        accountNo="IBAN:TR1555655589987"
+        name="Mustafa Özgün"
+        accountNo="IBAN:TR26 0011 1000 0000 0086 7175 55"
       />
       <BankAccount
         image="/images/banks/yapi-kredi.png"
-        name="Şerif Kaytan"
-        accountNo="IBAN:TR1555655589987"
+        name="Mustafa Özgün"
+        accountNo="IBAN:TR26 0011 1000 0000 0086 7175 55"
       />
     </div>
   );
