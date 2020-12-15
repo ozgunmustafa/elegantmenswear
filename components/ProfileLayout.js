@@ -9,9 +9,7 @@ const ProfileLayout = ({ children }) => {
         <div className="profile-grid">
           <div>
             <h4 className="mb-3 sm-hide">Hesabım</h4>
-            <ProfileMenu>
-              <ProfileMenu.Item>sad</ProfileMenu.Item>
-            </ProfileMenu>
+            <ProfileMenu classnames="profile-menu-scroll"/>
           </div>
             {children}
         </div>

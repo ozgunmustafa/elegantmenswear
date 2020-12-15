@@ -28,8 +28,13 @@ const Adreslerim = () => {
           ></AddressModal>
         </div>
         <div className="fav-grid my-2">
-          <Panel>
-            <Panel.Header>İzmir Ev</Panel.Header>
+            <Panel>
+            <Panel.Header>
+              <div className="d-flex justify-content-between">
+                İzmir Ev
+              </div>
+              
+            </Panel.Header>
             <Panel.Body>
               <div className="panel-content">
                 <strong>Mustafa Özgün</strong>

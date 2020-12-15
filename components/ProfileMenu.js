@@ -7,7 +7,7 @@ import Link from "next/link";
 const ProfileMenu = ({ classnames }) => {
   return (
     <ul className={`${classnames ? classnames : ""} profile-menu`}>
-      <li>
+      <li className="active">
         <Link href="/hesabim/siparislerim">
           <a>
             <FiBox />
