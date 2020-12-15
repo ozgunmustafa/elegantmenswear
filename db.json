@@ -1,0 +1,101 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sunt",
+      "price": 297,
+      "categoryId": 1,
+      "rate": 4.38,
+      "content": "Tempora sed explicabo quae recusandae vitae debiti",
+      "review": 63,
+      "images": [
+        {
+          "url": "https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG",
+          "title": "Tempora sed explicabo quae recusandae vitae debiti"
+        },
+        {
+          "url": "https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG",
+          "title": "Tempora sed explicabo quae recusandae vitae debiti"
+        },
+        {
+          "url": "https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_3_buyuk.JPG",
+          "title": "Tempora sed explicabo quae recusandae vitae debiti"
+        },
+        {
+          "url": "https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_4_buyuk.JPG",
+          "title": "Tempora sed explicabo quae recusandae vitae debiti"
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "name": "Nulla",
+      "price": 207,
+      "categoryId": 1,
+      "rate": 2.44,
+      "content": "Culpa sed tenetur incidunt quia veniam sed molliti",
+      "review": 78,
+      "imageUrl": "https://dummyimage.com/400x350"
+    },
+    {
+      "id": 202,
+      "name": "Corporis",
+      "price": 271,
+      "categoryId": 1,
+      "rate": 2.18,
+      "content": "Nam incidunt blanditiis odio inventore. Nobis volu",
+      "review": 67,
+      "imageUrl": "https://dummyimage.com/931x785"
+    },
+    {
+      "id": 203,
+      "name": "Minus",
+      "price": 295,
+      "categoryId": 1,
+      "rate": 0.91,
+      "content": "Quod reiciendis aspernatur ipsum cum debitis. Quis",
+      "review": 116,
+      "imageUrl": "https://dummyimage.com/556x985"
+    },
+    {
+      "id": 204,
+      "name": "Qui",
+      "price": 280,
+      "categoryId": 1,
+      "rate": 3.11,
+      "content": "Occaecati dolore assumenda facilis error quaerat. ",
+      "review": 78,
+      "imageUrl": "https://dummyimage.com/855x573"
+    },
+    {
+      "id": 209,
+      "name": "Similique",
+      "price": 262,
+      "categoryId": 1,
+      "rate": 0.29,
+      "content": "Autem blanditiis similique saepe excepturi at erro",
+      "review": 44,
+      "imageUrl": "http://www.lorempixel.com/577/852"
+    },
+    {
+      "id": 220,
+      "name": "Soluta",
+      "price": 109,
+      "categoryId": 1,
+      "rate": 0.28,
+      "content": "Quos accusamus distinctio voluptates ducimus neque",
+      "review": 34,
+      "imageUrl": "https://dummyimage.com/400x350"
+    },
+    {
+      "id": 223,
+      "name": "Quos",
+      "price": 247,
+      "categoryId": 1,
+      "rate": 4.74,
+      "content": "Error voluptate recusandae reiciendis adipisci nec",
+      "review": 188,
+      "imageUrl": "https://dummyimage.com/400x350"
+    }
+  ]
+}

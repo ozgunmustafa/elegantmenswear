@@ -1,0 +1,36 @@
+.headerTop{
+    padding: 15px 0px;
+    font-family: "Poppins" ,sans-serif!important;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #AAA7A8;
+    display: flex ;
+    a + a{
+        margin-left: 12px;
+        &:hover{
+            color: #747474;
+        }
+    }
+}
+.topNav{
+    background-color: #5B5B5B;
+    color: white;
+}
+.topMenu{
+    text-transform: uppercase;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    li{
+        display: inline-block;
+    }
+    li+li{
+        margin-left: 15px;
+    }
+    a{
+        letter-spacing: 1px;
+    }
+    a:hover{
+        border-bottom: 2px solid white;
+    }
+}
