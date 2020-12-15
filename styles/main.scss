@@ -397,6 +397,7 @@ input[type="checkbox"] {
   margin-bottom: 1rem;
   color: #616161;
   transition: all ease-in 0.2s;
+  font-size: .7rem;
   &:hover {
     background-color: rgb(36, 36, 36);
     color: white;
@@ -990,7 +991,8 @@ input[type="checkbox"] {
   display: flex;
   padding: 10px;
   img{
-    height: 94px;
+    height: 105px;
+    width: 60px;
     object-fit: cover;
     object-position: top;
     border-radius: 4px;
@@ -998,7 +1000,7 @@ input[type="checkbox"] {
   }
   .details{
     p{
-      font-size:1rem;
+      font-size:.9rem;
     }
     display:flex;
     flex-direction:column;
@@ -1161,6 +1163,10 @@ ul.profile-menu {
       margin-right: 5px;
       font-size: 22px;
     }
+    &.active{
+      font-weight: 600;
+      color: black;
+     }
   }
 }
 
@@ -1251,6 +1257,12 @@ ul.profile-menu {
   font-size: 1.2rem;
   display: block;
 }
+.discount{
+  color: #ff000063;
+  strong{
+    text-decoration: line-through;
+  }
+}
 
 .fixed-grid {
   display: flex;
@@ -1293,7 +1305,6 @@ ul.profile-menu {
 .line-through{
   color: #c9c9c9;
   text-decoration: line-through;
-
 }
 .fit-height{
   height: fit-content;
@@ -1528,13 +1539,7 @@ ul.profile-menu {
     }
     li {
       margin-right: 15px;
-      /* background-color: #f8f8f8; */
-      padding: 5px 0px;
-      /* border-radius: 25px; */
-      &.active{
-       font-weight: 600;
-       color: black;
-      }
+      padding: 5px 0px;    
     }
   }
 #rrr:checked .panel{

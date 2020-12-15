@@ -26,21 +26,21 @@ const Detay = () => {
             <Panel.Body>
               <div className="order-content">
                 <div className="d-flex justify-content-between align-items-center">
-                  <span>Ürün Toplamı :</span>
-                  <strong>25.99 TL</strong>
+                  <span>Ürün Toplamı </span>
+                  <strong>275.99 TL</strong>
                 </div>
                 <div className="d-flex justify-content-between align-items-center">
-                  <span>Ürün Toplamı :</span>
-                  <strong>25.99 TL</strong>
+                  <span>Kargo Bedeli </span>
+                  <strong>9.99 TL</strong>
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
-                  <span>Ürün Toplamı :</span>
+                <div className="d-flex justify-content-between align-items-center discount">
+                  <span>150 TL ve üzeri kargo bedava </span>
                   <strong>25.99 TL</strong>
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between align-items-center">
                   <strong>Toplam :</strong>
-                  <strong>25.99 TL</strong>
+                  <strong>275.99 TL</strong>
                 </div>
               </div>
             </Panel.Body>
@@ -58,13 +58,13 @@ const Detay = () => {
                   <div className="details">
                     <p className="mb-0"><strong>Füme Slim Fit Yelekli Takım Elbise</strong>
                     </p>
-                    <div className="product-price my-2">
+                    <div className="product-price my-1">
                       <span className="mr-2 line-through">1000 ₺</span>
                       <span className="text-red mt-1">700 ₺</span>
                     </div>
                     <div className="d-flex">
-                    <button className="soft-btn mb-0 mr-2 border-light">İade Talep Et</button>
-                    <button className="soft-btn mb-0 border-light">Puan Ver</button>
+                    <a className="soft-btn mb-0 mr-2 border-light">İade Talep Et</a>
+                    <a className="soft-btn mb-0 border-light">Puan Ver</a>
                     </div>
                   </div>
                 </div>

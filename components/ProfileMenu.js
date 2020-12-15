@@ -3,11 +3,16 @@ import { BiCurrentLocation, BiHeart } from "react-icons/bi";
 import { AiOutlineQuestion } from "react-icons/ai";
 import { HiUser } from "react-icons/hi";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 
 const ProfileMenu = ({ classnames }) => {
+
+  const router = useRouter();
+
   return (
     <ul className={`${classnames ? classnames : ""} profile-menu`}>
-      <li className="active">
+      <li className={router.pathname === "/hesabim/siparislerim" ? "active" : ""}>
         <Link href="/hesabim/siparislerim">
           <a>
             <FiBox />
@@ -15,7 +20,7 @@ const ProfileMenu = ({ classnames }) => {
           </a>
         </Link>
       </li>
-      <li>
+      <li className={router.pathname === "/hesabim/bilgilerim" ? "active" : ""}>
         <Link href="/hesabim/bilgilerim">
           <a>
             <HiUser />
@@ -23,7 +28,7 @@ const ProfileMenu = ({ classnames }) => {
           </a>
         </Link>
       </li>
-      <li>
+      <li className={router.pathname === "/hesabim/adreslerim" ? "active" : ""}>
         <Link href="/hesabim/adreslerim">
           <a>
             <BiCurrentLocation />
@@ -31,7 +36,7 @@ const ProfileMenu = ({ classnames }) => {
           </a>
         </Link>
       </li>
-      <li>
+      <li className={router.pathname === "/hesabim/favorilerim" ? "active" : ""}>
         <Link href="/hesabim/favorilerim">
           <a>
             <BiHeart />
@@ -40,7 +45,7 @@ const ProfileMenu = ({ classnames }) => {
         </Link>
       </li>
       <li>
-        <a href="#">
+        <a>
           <AiOutlineQuestion />
           Yardım
         </a>

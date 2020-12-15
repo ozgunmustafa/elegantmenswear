@@ -1,8 +1,8 @@
 import Layout from "./layout";
-
 import ProfileMenu from "./ProfileMenu";
 
 const ProfileLayout = ({ children }) => {
+
   return (
     <Layout>
       <div className="container">
