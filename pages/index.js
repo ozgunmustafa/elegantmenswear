@@ -201,60 +201,78 @@ export default function Home() {
           </div>
 
           <div className="product-card">
-              <Slide settings={productSlide}>
-                <div>
-                  <figure>
-                    <img
-                      className="prd-img"
-                      src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <div>
-                  <figure>
-                    <img
-                      className="prd-img"
-                      src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </Slide>
-              <div className="card-bottom">
-                <div className="product-name">Sarı Ekose Ceket</div>
-                <div className="product-price">742.99 TL</div>
+            <Slide settings={productSlide}>
+              <div>
+                <figure>
+                  <img
+                    className="prd-img"
+                    src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
+                    alt=""
+                  />
+                </figure>
               </div>
-            </div>
-            <div className="product-card">
-              <Slide settings={productSlide}>
-                <div>
-                  <figure>
-                    <img
-                      className="prd-img"
-                      src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-                <div>
-                  <figure>
-                    <img
-                      className="prd-img"
-                      src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
-                      alt=""
-                    />
-                  </figure>
-                </div>
-              </Slide>
-              <div className="card-bottom">
-                <div className="product-name">Sarı Ekose Ceket</div>
-                <div className="product-price">742.99 TL</div>
+              <div>
+                <figure>
+                  <img
+                    className="prd-img"
+                    src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
+                    alt=""
+                  />
+                </figure>
               </div>
+            </Slide>
+            <div className="card-bottom">
+              <div className="product-name">Sarı Ekose Ceket</div>
+              <div className="product-price">742.99 TL</div>
             </div>
+          </div>
+          <div className="product-card">
+            <Slide settings={productSlide}>
+              <div>
+                <figure>
+                  <img
+                    className="prd-img"
+                    src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img
+                    className="prd-img"
+                    src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </Slide>
+            <div className="card-bottom">
+              <div className="product-name">Sarı Ekose Ceket</div>
+              <div className="product-price">742.99 TL</div>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="introduce-video" className="introduce-video">
+      <section className=" bg-light p-3 mb-3">
+        <div className="custom-container">
+        <div className="d-grid-2 ">
+          <div className="d-flex flex-column justify-content-center p-2">
+            <p>50 TL'lik indirim kuponunu yakala</p>
+            <small>Fırsatlardan haberdar olmak ve ilk aboneliğe özel 50 TL'lik indirim kuponunu almak için abone ol.</small>
+          </div>
+          <div className="p-3">
+            <p>Bültenimize Abone Ol!</p>
+            <form id="subscribe-form">
+                <input className="" type="email" placeholder="Eposta Adresi"></input>
+                <button>Abone Ol</button>
+            </form>
+          </div>
+        </div>
+        </div>
+
+      </section>
+      {/* <section id="introduce-video" className="introduce-video">
         <div className="separator">Bizi Yakından Tanıyın</div>
 
         <div className="d-grid-2 bg-video-sec">
@@ -279,9 +297,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <div className="separator">İlginizi Çekebilecek Kategoriler</div>
+      {/* <div className="separator">İlginizi Çekebilecek Kategoriler</div>
       <section>
         <div className="d-grid-2 grid-gap">
           <a href="">
@@ -315,8 +333,8 @@ export default function Home() {
             </div>
           </a>
         </div>
-      </section>
-{/* 
+      </section> */}
+      {/* 
       <div className="custom-container my-2">
         <Slide settings={firstSliderSetting}>
           <div>
@@ -382,7 +400,6 @@ export default function Home() {
           </div>
         </Slide>
       </div> */}
-      
     </Layout>
   );
 }

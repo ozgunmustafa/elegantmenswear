@@ -23,9 +23,10 @@ ul{
   margin-bottom: 0px;
 }
 small{
-  line-height: 10px;
+  line-height: 16px;
   font-size: 70%;
   color: #a2a2a2!important;
+  font-weight: 100;
 }
 .primary-bg{
 background-color: #5B5B5B;  

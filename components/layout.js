@@ -13,7 +13,6 @@ export default function Layout({ children }) {
         <title>Elegant Mens Wear</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-
         <link
           href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap"
           rel="stylesheet"
@@ -32,7 +31,7 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main className="main-wrapper">{children}</main>
-
+      <Footer/>
       
     </div>
   );

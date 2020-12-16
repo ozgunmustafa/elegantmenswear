@@ -538,7 +538,11 @@ input[type="checkbox"] {
   grid-template-columns:repeat(4,24%);
   justify-content: space-between;
 }
-
+.footer-grid{
+  display: grid;
+  grid-template-columns:repeat(5,19%);
+  justify-content: space-between;
+}
 
 
 .desktop-menu {
@@ -1184,9 +1188,28 @@ ul.profile-menu {
     font-size: 0.9rem;
   }
 }
+
 #acoount-update-form{
   font-size: 0.8rem;
   padding: 10px;
+}
+
+#subscribe-form{
+  display: flex;
+  input{
+    padding:10px;
+    border:none;
+    min-width: 250px;
+    margin-bottom: 10px;
+  }
+  button{
+    padding:10px;
+    border:none;
+    background-color:black;
+    color: white;
+    margin-bottom: 10px;
+
+  }
 }
 .profile-box-title{
   font-size: .8rem;
@@ -1560,7 +1583,10 @@ ul.profile-menu {
       margin-right: 0px;
     }
   }
-  .home-product-grid{
+  .home-product-grid , .footer-grid{
     grid-template-columns:100%;
+  }
+  #subscribe-form{
+    flex-direction: column;
   }
 }
