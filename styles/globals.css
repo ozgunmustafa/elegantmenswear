@@ -127,16 +127,17 @@ label{
   top: 36px;
 }
 .bars{
-  width: 1.5rem;
+  width: 1.2rem;
   height: 1.3rem;
   position: relative;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
+  margin-right: 5px;
 }
 .bars div{
-  width: 1.5rem;
-  height: 0.2rem;
+  width: 1.2rem;
+  height: 0.1rem;
   background-color: rgb(0, 0, 0);
 }
 .bm-burger-bars-hover {
