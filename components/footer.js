@@ -1,5 +1,6 @@
 import { SiFastly } from "react-icons/si";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 SiFastly;
 export default function footer() {
@@ -33,22 +34,22 @@ export default function footer() {
             </a>
           </div>
           <div className="mb-3">
-            <div className="footer-nav-title">KURUMSAL</div>
-            <a href="#" className="d-block">
-              Hesabım
-            </a>
-            <a href="#" className="d-block">
-              Giriş Yap
-            </a>
-            <a href="#" className="d-block">
-              Üye Ol
-            </a>
-            <a href="#" className="d-block">
-              Sepetim
-            </a>
-            <a href="#" className="d-block">
-              Favorilerim
-            </a>
+            <div className="footer-nav-title">KULLANICI</div>
+            <Link href="/giris">
+              <a className="d-block">Giris Yap</a>
+            </Link>
+            <Link href="/kaydol">
+              <a className="d-block">Kaydol</a>
+            </Link>
+            <Link href="/hesabim/bilgilerim">
+              <a className="d-block">Hesabım</a>
+            </Link>
+            <Link href="/hesabim/favorilerim">
+              <a className="d-block">Favorilerim</a>
+            </Link>
+            <Link href="/sepetim">
+              <a className="d-block">Sepetim</a>
+            </Link>
           </div>
           <div className="mb-3">
             <div className="footer-nav-title">Bize Ulaşın</div>

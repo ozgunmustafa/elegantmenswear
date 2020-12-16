@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function header() {
   return (
     <>
-      <header className="bg-light header-sticky-sm py-4">
+      <header className="bg-light header-sticky-sm py-3">
         <nav className="">
           <div className="px-3 d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">

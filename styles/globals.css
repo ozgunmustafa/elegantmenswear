@@ -90,9 +90,8 @@ label{
 .form-element{
   display: block;
   width: 100%;
-  font-size: .8rem;
+  font-size: .9rem;
   padding: .3rem;
-  font-weight: 100;
   line-height: 1.5;
   color: #495057;
   background-color: #f8f9fa;
@@ -101,6 +100,7 @@ label{
   border-radius: 0;
   transition: border-color .08s ease-in-out,box-shadow .08s ease-in-out;
   margin-bottom: .8rem;
+  font-weight: 600;
 }
 .form-element:focus{
     color: #495057;

@@ -15,19 +15,19 @@ const Bilgilerim = () => {
             <form id="acoount-update-form">
               <div className="d-grid-2">
                 <label>Ad*</label>
-                <input type="text" className="form-element" />
+                <input type="text" className="form-element" value="Mustafa"/>
               </div>
               <div className="d-grid-2">
                 <label>Soyad*</label>
-                <input type="text" className="form-element" />
+                <input type="text" className="form-element" value="Özgün"/>
               </div>
               <div className="d-grid-2">
                 <label>Email*</label>
-                <input type="text" className="form-element" />
+                <input type="text" className="form-element" value="ozzgunmustafa@gmail.com"/>
               </div>
               <div className="d-grid-2">
                 <label>Cep Telefonu*</label>
-                <input type="text" className="form-element" />
+                <input type="text" className="form-element" value="507 386 11 25"/>
               </div>
               <div className="d-grid-2">
                 <label>Doğum Tarihi*</label>
@@ -57,7 +57,7 @@ const Bilgilerim = () => {
                     Kadın
                   </label>
                   <label>
-                    <input type="radio" name="gender" />
+                    <input type="radio" name="gender"/>
                     Erkek
                   </label>
                 </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../components/layout";
 
 const girisYap = () => {
@@ -8,8 +9,8 @@ const girisYap = () => {
           <div className="sm-hide">
             <img src="/images/suit.jpg" className="w-100" />
           </div>
-        <div className="position-relative"  style={{ height: "100%" }}>
-        <div className="merge-box sm-hide"></div>
+          <div className="position-relative" style={{ height: "100%" }}>
+            <div className="merge-box sm-hide"></div>
             <div className="merge-box-1 sm-hide"></div>
             <div className="merge-box-2 sm-hide"></div>
             <div className="paddingAuth" style={{ height: "100%" }}>
@@ -34,12 +35,14 @@ const girisYap = () => {
                         Beni Hatırla
                       </label>
                       <a href="#" className="text-underline">
-                        Şifemi Unuttum
+                        Şifremi Unuttum
                       </a>
                     </div>
 
                     <div className="col-md-12">
-                      <button className="primary-btn w-100 my-3">Giriş Yap</button>
+                      <button className="primary-btn w-100 my-3">
+                        Giriş Yap
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -49,17 +52,17 @@ const girisYap = () => {
                 <div className="text-center my-3">
                   <p className="text-muted">
                     Hesabın yok mu?
-                    <a href="#" className="mx-2 text-underline">
-                      <strong>Kaydol</strong>
-                    </a>
+                    <Link href="/kaydol">
+                      <a className="mx-2 text-underline">
+                        <strong>Kaydol</strong>
+                      </a>
+                    </Link>
                   </p>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-        </div>
-
-
       </div>
     </Layout>
   );
