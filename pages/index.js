@@ -143,8 +143,8 @@ export default function Home() {
           <CategoryCard src="/images/category/underwear.png" name="Dış Giyim" />
         </div>
       </section>
-      <div className="separator">Diğer Kombin Seçenekleri</div>
-      <section className="custom-container my-2">
+      <section className="custom-container my-2 mb-4">
+      <div className="separator ">Diğer Kombin Seçenekleri</div>
         <div className="home-product-grid">
           <div className="product-card">
             <Slide settings={productSlide}>
@@ -254,14 +254,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" bg-light p-3 mb-3">
+      <section className=" bg-light p-3">
         <div className="custom-container">
-        <div className="d-grid-2 ">
-          <div className="d-flex flex-column justify-content-center p-2">
+        <div className="subscribe-area">
+          <div className="d-flex flex-column justify-content-center mb-4 py-3">
             <p>50 TL'lik indirim kuponunu yakala</p>
             <small>Fırsatlardan haberdar olmak ve ilk aboneliğe özel 50 TL'lik indirim kuponunu almak için abone ol.</small>
           </div>
-          <div className="p-3">
+          <div className="py-3">
             <p>Bültenimize Abone Ol!</p>
             <form id="subscribe-form">
                 <input className="" type="email" placeholder="Eposta Adresi"></input>

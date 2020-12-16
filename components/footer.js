@@ -8,7 +8,7 @@ export default function footer() {
       <div className="custom-container  footer-menus">
         <div className="footer-grid grid-gap">
  
-          <div>
+          <div className="mb-3">
             <div className="footer-nav-title">KATEGORİLER</div>
             <a href="#" className="d-block">
               Gömlek
@@ -20,7 +20,7 @@ export default function footer() {
               Ceket
             </a>
           </div>
-          <div>
+          <div className="mb-3">
             <div className="footer-nav-title">KOLEKSİYONLAR</div>
             <a href="#" className="d-block">
               Gömlek
@@ -32,7 +32,7 @@ export default function footer() {
               Ceket
             </a>
           </div>
-          <div>
+          <div className="mb-3">
             <div className="footer-nav-title">KURUMSAL</div>
             <a href="#" className="d-block">
               Hesabım
@@ -50,20 +50,19 @@ export default function footer() {
               Favorilerim
             </a>
           </div>
-          <div>
+          <div className="mb-3">
             <div className="footer-nav-title">Bize Ulaşın</div>
             <p>
-              <strong>Adres : </strong>Yeşillik Cad. No:165/2 35400 Karabağlar -
-              İZMİR
+              <strong>Adres : </strong>Bayraklı / İzmir
             </p>
             <p>
-              <strong>Telefon : </strong>0232 265 06 06
+              <strong>Telefon : </strong>0507 386 11 25
             </p>
             <a href="#" className="d-block">
-              havan@havan.com.tr
+              elegant@manswear.com.tr
             </a>
           </div>
-          <div className="text-center">
+          <div >
             <img src="/logo.png" alt="" className="mb-3" />
             <div className="social-icons d-flex justify-content-between">
               <div className="icon">

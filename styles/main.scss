@@ -106,7 +106,7 @@ input[type="checkbox"] {
 
 .footer-nav-title {
   font-weight: 600;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 
 .intro-buttons{
@@ -1193,6 +1193,10 @@ ul.profile-menu {
   font-size: 0.8rem;
   padding: 10px;
 }
+.subscribe-area{
+  display: flex;
+  justify-content: space-between;
+}
 
 #subscribe-form{
   display: flex;
@@ -1201,6 +1205,7 @@ ul.profile-menu {
     border:none;
     min-width: 250px;
     margin-bottom: 10px;
+    font-size: .8rem;
   }
   button{
     padding:10px;
@@ -1587,6 +1592,9 @@ ul.profile-menu {
     grid-template-columns:100%;
   }
   #subscribe-form{
+    flex-direction: column;
+  }
+  .subscribe-area{
     flex-direction: column;
   }
 }
