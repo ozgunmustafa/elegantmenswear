@@ -10,7 +10,7 @@ const Sonuc = () => {
           <div className="py-3">
             <ProductOptionCard title="Aranan Kelime">
               <div className="filter-box-desktop my-2">
-                <p>Kazak</p>
+                <p>Blazer Ceket</p>
               </div>
               <hr />
             </ProductOptionCard>

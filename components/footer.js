@@ -5,7 +5,7 @@ import Link from "next/link";
 SiFastly;
 export default function footer() {
   return (
-    <footer className="bg-light py-5 px-2">
+    <footer className="bg-light py-5 px-2 mt-3">
       <div className="custom-container  footer-menus">
         <div className="footer-grid grid-gap">
  

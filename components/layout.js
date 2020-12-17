@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./header";
-import Footer from "./footer";
 import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,7 +30,6 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main className="main-wrapper">{children}</main>
-      <Footer/>
       
     </div>
   );

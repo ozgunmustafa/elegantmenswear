@@ -1,8 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 const CategoryCard = ({ src, name }) => {
   return (
-    <a href="#" className="category-card">
+    <Link href="/sonuc">
+    <a className="category-card">
       <div className="img-hover-zoom">
         <img className="prd-img" src={src} alt="" />
       </div>
@@ -11,6 +13,8 @@ const CategoryCard = ({ src, name }) => {
         <div className="category-name">{name}</div>
       </div>
     </a>
+    </Link>
+    
   );
 };
 
