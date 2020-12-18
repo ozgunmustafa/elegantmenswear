@@ -13,8 +13,6 @@ const Favorilerim = () => {
           <h1 className="profile-title">Favorilerim</h1>
         </div>
         <div className="fav-grid">
-
-
         {homeProducts.map((product) => {
             return (
               <Link href="/urun">
@@ -26,7 +24,6 @@ const Favorilerim = () => {
               </Link>
             );
           })}
-         
         </div>
       </div>
     </ProfileLayout>

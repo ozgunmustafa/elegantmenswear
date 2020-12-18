@@ -94,19 +94,25 @@ const ProductCard = () => {
           <Slide settings={productImageSlide}>
             <div>
               <img
-                src="https://cdn.dsmcdn.com/mnresize/415/622/ty26/product/media/images/20201125/9/31982311/19753891/1/1_org_zoom.jpg"
+                src="/images/products/home-products/product-1/1.png"
                 className="w-100"
               />
             </div>
             <div>
               <img
-                src="https://cdn.dsmcdn.com/mnresize/415/622/ty26/product/media/images/20201125/9/31982311/19753891/1/1_org_zoom.jpg"
+                src="/images/products/home-products/product-1/2.png"
                 className="w-100"
               />
             </div>
             <div>
               <img
-                src="https://cdn.dsmcdn.com/mnresize/415/622/ty26/product/media/images/20201125/9/31982311/19753891/1/1_org_zoom.jpg"
+                src="/images/products/home-products/product-1/3.png"
+                className="w-100"
+              />
+            </div>
+            <div>
+              <img
+                src="/images/products/home-products/product-1/4.png"
                 className="w-100"
               />
             </div>
