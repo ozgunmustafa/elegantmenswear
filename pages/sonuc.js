@@ -1,6 +1,8 @@
 import ProductOptionCard from "../components/ProductOptionCard";
 import ProductCard from "../components/ProductCard";
 import Layout from "../components/layout";
+import { homeProducts } from "../src/data/homeProducts";
+import Link from "next/link";
 
 const Sonuc = () => {
   return (
@@ -10,7 +12,7 @@ const Sonuc = () => {
           <div className="py-3">
             <ProductOptionCard title="Aranan Kelime">
               <div className="filter-box-desktop my-2">
-                <p>Blazer Ceket</p>
+                <p>Blazer</p>
               </div>
               <hr />
             </ProductOptionCard>
@@ -62,31 +64,29 @@ const Sonuc = () => {
             </ProductOptionCard>
           </div>
           <div className="">
-          <div className="d-flex align-items-center justify-content-between py-3 px-2">
-             <p className="mb-0"><strong>Ekose</strong> için arama sonuçları.</p> 
-            
-             <select className="filter-select">
-                 <option>Sıralama Seçiniz</option>
-                 <option>Küçükten Büyüğe</option>
-             </select>
-          </div>
-            
+            <div className="d-flex align-items-center justify-content-between py-3 px-2">
+              <p className="mb-0">
+                <strong>Blazer</strong> için arama sonuçları.
+              </p>
+
+              <select className="filter-select">
+                <option>Sıralama Seçiniz</option>
+                <option>Küçükten Büyüğe</option>
+              </select>
+            </div>
+
             <div className="fav-grid">
-            <ProductCard
-            src="/images/products/takim_elbise_1-2.png"
-            classnames="fs-small"
-            like={false}
-          ></ProductCard>
-          <ProductCard
-            src="/images/products/takim_elbise_1-2.png"
-            classnames="fs-small"
-            like={true}
-          ></ProductCard>
-          <ProductCard
-            src="/images/products/takim_elbise_1-2.png"
-            classnames="fs-small"
-            like={false}
-          ></ProductCard>
+            {homeProducts.map((product) => {
+            return (
+              <Link href="/urun">
+                <a>
+                  <div>
+                    <ProductCard classnames="fs-small" product={product} />
+                  </div>
+                </a>
+              </Link>
+            );
+          })}
             </div>
           </div>
         </div>

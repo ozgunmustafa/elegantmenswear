@@ -123,7 +123,7 @@ const ProductCard = () => {
       <div className="product-details ">
         <div className="sticked">
           <h1 className="product-name mb-0">
-            2018 - 2019 Sonbahar Kış Koleksiyonu
+          Mavi Micro Dokuma Takım Elbise
           </h1>
           <span className="product-code">KP256522</span>
 
