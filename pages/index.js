@@ -3,11 +3,16 @@ import Layout from "../components/layout";
 import Slide from "../components/Slide";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import Footer from "../components/footer";
-import { BiCreditCard, BiSupport } from "react-icons/bi";
 import { AiOutlineSafety } from "react-icons/ai";
-import { GiPayMoney } from "react-icons/gi";
+import { CgArrowsExchangeAlt } from "react-icons/cg";
+import { GiQuickSlash } from "react-icons/gi";
+import { FaPlaneDeparture } from "react-icons/fa";
 import CategoryCard from "../components/CategoryCard";
 import Link from "next/link";
+import Product from "../components/Product";
+
+import { categories } from "../src/data/categories";
+import { homeProducts } from "../src/data/homeProducts";
 
 const SampleNextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -75,49 +80,45 @@ export default function Home() {
         <div className="custom-container d-grid-4">
           <div className="advantage">
             <div className="icon">
-              <BiCreditCard className="d-block" />
-            </div>
-            <div className="text-left px-2">
-              <div className="title">Müşteri Hizmetleri</div>
-              <small className="sm-hide">
-                Kredi kartı bilgileriniz 128 bit SSL güvenlik sistemi ile
-                korunmaktadır.
-              </small>
-            </div>
-          </div>
-          <div className="advantage">
-            <div className="icon">
-              <GiPayMoney className="d-block" />
-            </div>
-            <div className="text-left px-2">
-              <div className="title">Güvenilir Alışveriş</div>
-              <small className="sm-hide">
-                Kredi kartı bilgileriniz 128 bit SSL güvenlik sistemi ile
-                korunmaktadır.
-              </small>
-            </div>
-          </div>
-          <div className="advantage">
-            <div className="icon">
               <AiOutlineSafety className="d-block" />
             </div>
             <div className="text-left px-2">
-              <div className="title">Müşteri Hizmetleri</div>
+              <div className="title">Güvenli Ödeme</div>
               <small className="sm-hide">
-                Kredi kartı bilgileriniz 128 bit SSL güvenlik sistemi ile
-                korunmaktadır.
+                128 bit SSL güvenlik sistemi ile koruma.
               </small>
             </div>
           </div>
           <div className="advantage">
             <div className="icon">
-              <BiSupport className="d-block" />
+              <CgArrowsExchangeAlt className="d-block" />
             </div>
             <div className="text-left px-2">
-              <div className="title">Güvenilir Alışveriş</div>
+              <div className="title">İade & Değişim</div>
               <small className="sm-hide">
-                Kredi kartı bilgileriniz 128 bit SSL güvenlik sistemi ile
-                korunmaktadır.
+                14 gün içinde koşulsuz iade & değişim imkanı.
+              </small>
+            </div>
+          </div>
+          <div className="advantage">
+            <div className="icon">
+              <GiQuickSlash className="d-block" />
+            </div>
+            <div className="text-left px-2">
+              <div className="title">Hızlı Kargo</div>
+              <small className="sm-hide">
+                Yapacağınız tüm alışverişlerinizde hızlı teslimat.
+              </small>
+            </div>
+          </div>
+          <div className="advantage">
+            <div className="icon">
+              <FaPlaneDeparture className="d-block" />
+            </div>
+            <div className="text-left px-2">
+              <div className="title">Yurtdışı Gönderim</div>
+              <small className="sm-hide">
+                Ürünleriniz için yurtdışı gönderim imkanı.
               </small>
             </div>
           </div>
@@ -126,147 +127,50 @@ export default function Home() {
       <section id="home-categories" className="custom-container">
         <div className="separator">İlginizi Çekebilecek Kategoriler</div>
         <div className="d-grid-4 grid-gap">
-          <CategoryCard
-            src="/images/category/tie-vertical.jpg"
-            name="Aksesuar"
-          />
-          <CategoryCard
-            src="/images/category/shirt-vertical.png"
-            name="Gömlek"
-          />
-          <CategoryCard
-            src="/images/category/blazer-vertical.png"
-            name="Blazer"
-          />
-          <CategoryCard src="/images/category/underwear.png" name="Dış Giyim" />
+          {categories.map((category) => {
+            return <CategoryCard category={category} />;
+          })}
         </div>
       </section>
       <section className="custom-container my-2 mb-4">
         <div className="separator ">Diğer Kombin Seçenekleri</div>
         <div className="home-product-grid">
-          <Link href="/product">
-            <a>
-              <div className="product-card">
-                <Slide settings={productSlide}>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                </Slide>
-                <div className="card-bottom">
-                  <div className="product-name">Sarı Ekose Ceket</div>
-                  <div className="product-price">742.99 TL</div>
-                </div>
-              </div>
-            </a>
-          </Link>
-          <Link href="/product">
-            <a>
-              <div className="product-card">
-                <Slide settings={productSlide}>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/10120757/dokuma-smokin-takim-elbise_bordo-bordo_4_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/10120757/dokuma-smokin-takim-elbise_bordo-bordo_3_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                </Slide>
+        {homeProducts.map((product) => {
+            return (
+              <Link href="/urun">
+              <a>
+                <Product>
+                  <Product.Body>
+                    <Slide settings={productSlide}>
 
-                <div className="card-bottom">
-                  <div className="product-name">Sarı Ekose Ceket</div>
-                  <div className="product-price">742.99 TL</div>
-                </div>
-              </div>
-            </a>
-          </Link>
+                      {
+                        product.images.map((image)=>{
+                          return(
+                            <div>
+                        <figure>
+                          <img
+                            className="prd-img"
+                            src={image.url}
+                            alt=""
+                          />
+                        </figure>
+                      </div>
+                          );
+                        })
+                      }
+                    </Slide>
+                  </Product.Body>
+                  <Product.Footer>
+                    <div className="product-name">{product.name}</div>
+                    <div className="product-price">{product.price} TL</div>
+                  </Product.Footer>
+                </Product>
+              </a>
+            </Link>
+            );
+          })}
 
-          <Link href="/product">
-            <a>
-              <div className="product-card">
-                <Slide settings={productSlide}>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                </Slide>
-                <div className="card-bottom">
-                  <div className="product-name">Sarı Ekose Ceket</div>
-                  <div className="product-price">742.99 TL</div>
-                </div>
-              </div>
-            </a>
-          </Link>
 
-          <Link href="/product">
-            <a>
-              <div className="product-card">
-                <Slide settings={productSlide}>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_1_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div>
-                    <figure>
-                      <img
-                        className="prd-img"
-                        src="https://cdn.sorsware.com/kip/ContentImages/Product/2020-1/20135037/takim-elbise_20135037_vizon-vizon_2_buyuk.JPG"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                </Slide>
-                <div className="card-bottom">
-                  <div className="product-name">Sarı Ekose Ceket</div>
-                  <div className="product-price">742.99 TL</div>
-                </div>
-              </div>
-            </a>
-          </Link>
         </div>
       </section>
       <section className=" bg-light p-3">

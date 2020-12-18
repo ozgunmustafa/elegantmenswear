@@ -1,23 +1,23 @@
 import { AiFillHeart,AiOutlineHeart } from "react-icons/ai";
 
 
-const ProductCard = ({src,classnames,like}) => {
+const ProductCard = ({product,classnames,like}) => {
   return (
     <div className="product-card m-1">
       <div>
         <figure>
           <img
             className="card-img"
-            src={src}
+            src={product.images[0].url}
             alt=""
           />
         </figure>
       </div>
-      {like? <AiFillHeart className="like-icon"/> :<AiOutlineHeart className="like-icon"/> }
+     {like?<AiFillHeart className="like-icon"/>:<AiOutlineHeart className="like-icon"/>}  
       <div className={`card-bottom ${classnames}`}>
           <div className="product-name">İndigo Dokuma Takım Elbise</div>
           <div className="product-price my-2">
-            <span className="instead-price">1000₺</span>700₺
+            <span className="instead-price">1000₺</span>{product.price}₺
           </div>
           <div className="product-actions">
             <select className="form-element mb-0">

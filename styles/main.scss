@@ -483,20 +483,20 @@ input[type="checkbox"] {
   margin: 10px 0px;
   width: 100%;
   .icon {
-    min-width: 50px;
-    height: 50px;
+    min-width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    background-color: #f8f9fa !important;
+    border-radius: 8px;
+    background-color: $primaryColor!important;
     border: 1px solid #f6f6f6;
     box-shadow: 0 3px 5px -6px #515151;
-    border: 1px solid #e8e8e8;
+    margin-bottom: 5px;
 
     svg {
       font-size: 20px;
-      color: $primaryColor;
+      color: white;
     }
     &:hover {
       background-color: $primaryColor;
@@ -592,7 +592,6 @@ input[type="checkbox"] {
 .d-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  place-items: center;
 }
 
 .grid-gap {
@@ -1269,6 +1268,9 @@ ul.profile-menu {
 }
 .product-price {
   font-weight: 500;
+  font-size: .8rem;
+  color: #db0012;
+
 }
 .discount-rate {
   font-size: 0.8rem;
@@ -1390,8 +1392,29 @@ ul.profile-menu {
 }
 label{
   color: #ababab;
-    font-size: .9rem;
+  font-size: .9rem;
 }
+
+
+.product-card {
+  background-color: #f8f8f8;
+  padding: 5px;
+  margin-bottom: 10px;
+  position: relative;
+
+  .card-img {
+    width: 100%;
+  }
+  .product-card-footer {
+    padding: 10px 0px;
+    margin-top: -10px;
+    font-size: 0.9rem;
+  }
+ 
+ 
+}
+
+
 
 
 @media only screen and (min-width: 768px) {

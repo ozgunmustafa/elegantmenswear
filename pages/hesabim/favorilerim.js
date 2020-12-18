@@ -1,5 +1,9 @@
+import Link from "next/link";
 import ProductCard from "../../components/ProductCard";
 import ProfileLayout from "../../components/ProfileLayout";
+
+import { homeProducts } from "../../src/data/homeProducts";
+
 
 const Favorilerim = () => {
   return (
@@ -9,21 +13,20 @@ const Favorilerim = () => {
           <h1 className="profile-title">Favorilerim</h1>
         </div>
         <div className="fav-grid">
-          <ProductCard
-            src="/images/products/takim_elbise_1-2.png"
-            classnames="fs-small"
-            like={true}
-          ></ProductCard>
-          <ProductCard
-            src="/images/products/takim_elbise_1-2.png"
-            classnames="fs-small"
-            like={true}
-          ></ProductCard>
-          <ProductCard
-            src="/images/products/takim_elbise_1-2.png"
-            classnames="fs-small"
-            like={true}
-          ></ProductCard>
+
+
+        {homeProducts.map((product) => {
+            return (
+              <Link href="/urun">
+                <a>
+                  <div>
+                    <ProductCard classnames="fs-small" product={product} />
+                  </div>
+                </a>
+              </Link>
+            );
+          })}
+         
         </div>
       </div>
     </ProfileLayout>
